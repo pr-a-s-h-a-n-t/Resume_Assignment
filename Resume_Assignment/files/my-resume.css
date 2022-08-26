@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+
+/*  */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+     
+    background-color: #fff;
+   
+
+}
+
+#hover-itm:hover{
+  color: aqua;
+  
+}
+#hover-itm:visited{
+  color: black;
+}
+
+
+h2 {
+    
+    color: #313c4e;
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+     
+    padding: 0.75rem 0;
+    
+
+}
+
+h3 {
+    font-size: 1rem;
+     
+}
+
+section ul {
+    margin-top: 0.75rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+section + section {
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.languaage li {
+    
+    color: #000000;
+     
+    font-size: 0.8rem;
+  }
+
+  .languaage li p {
+    color: #888;
+    font-size: 0.6rem;
+
+  }
+
+
+.hobbies li {
+    display: inline-block;
+    width: 5rem;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    margin-right: 1.2 rem;
+    padding: 0.4rem;
+}
+
+.contact {
+    
+    color: white;
+    background-color: rgb(49 60 78);;
+}
+
+.other_activities span {
+    color: #888;
+}
+
+.profile img {
+    border-radius: 9999px;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .profile p {
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .other_activities  p {
+
+    margin-top: 1rem;
+
+  }
+
+  .hobbies ul {
+    margin-top: 1rem;
+  }
+
+  .project h3 {
+    margin-top: 0.75rem;
+     
+  }
+
+  .project ul {
+     margin-top: 0; 
+     padding-left: 1rem;
+ }
+
+.content {
+  margin-bottom: 0.75rem;
+}
+
+.strength li {
+    
+    margin-top: 0.75rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 0.6rem 3rem 1rem;
+    gap: 1.5rem;
+     
+  
+  }
+  .grid-item {
+    padding: 2rem;
+
+
+     
+     
+     
+      
+   
+     
+  }
+
+   
+  
+
+  .timeline .content {
+    border-left: 1px solid #888;
+    padding-left: 1rem;
+    margin-left: 1rem;
+  } 
+
+   
+
+  ul {
+    list-style: none;
+    
+  }
+
+  .project ul {
+    list-style: circle;
+  }
+
+  .Skills > ul {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
+    
+     
+  }
+
+  .Skills li {
+    padding: 0.25rem;
+    border: 1px solid #888;
+    margin: 0.75rem;
+    border-radius: 0.2rem;
+     
+    background-color: #989da6;
+    color: white;
+    width: fit-content;
+     
+
+
+
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 0.5rem;
+  }
+
+  .profile img {
+    margin-left: 3rem;
+     
+  }
+
+  .main {
+    background-color: #fff ;
+    border: 1rem solid;
+  }
+
+  .main {
+    max-width: 850px;
+    margin: auto;
+     
+    grid-gap: 4rem;
+  }
+
+  .contact {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+     
+  }
+
+   
+  .lang {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .grid-right section + section {
+    margin: 0 rem;
+   }
+
+
+   /* makeing site responsive */
+
+   @media screen and (max-width: 658px) {
+    
+    * {
+      font-size: 0.7rem;
+    }
+    
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item .profile img {
+      margin: 0;
+      width: auto;
+    }
+
+
+
+     
+
+    .grid-item .profile {
+      display: flex;
+      flex-direction: column;
+       
+      align-items: center;
+    }
+
+    .profile .right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .profile .right p{
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+       
+    }
+
+    .contact-left li+li{
+      margin: 0.6rem 0;
+    }
+
+     
+
+    .contact-right li+li {
+      margin: 0.6rem 0;
+    }
+
+    .hobbies ul {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .hobbies ul li {
+      margin: 1rem;
+      width: 100%;
+    }
+
+    .Skills ul{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Skills ul li {
+      width: 100%;
+    }
+
+    
+   }
+   
+
+   
+   
